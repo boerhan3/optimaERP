@@ -8,6 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel="icon" href="{{ asset('adminlte/dist/img/icon_logo_U3K_icon.ico') }}" type="image/ico" sizes="16x16">
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
         <!-- Theme style -->
