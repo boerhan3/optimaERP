@@ -16,7 +16,7 @@
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     </head>
-    <body class="hold-transition layout-top-nav">
+    <body class="hold-transition layout-top-nav" >
         <div class="wrapper">
             <!-- Navbar -->
             <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
@@ -24,7 +24,7 @@
                     <a href="http://optimac.co.id/" target="_blank" class="navbar-brand">
                         <img src="{{ asset('adminlte/dist/img/icon_logo_U3K_icon.ico') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                         style="opacity: .8">
-                        <span class="brand-text font-weight-light">OptimaERP</span>
+                        <span class="brand-text font-weight">OptimaERP</span>
                     </a>
 
                     <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +93,7 @@
                     alt="optimaERP Logo"
                     class="brand-image img-circle elevation-3"
                     style="opacity: .8">
-                <span class="brand-text font-weight-light">OptimaERP</span>
+                <span class="brand-text font-weight">OptimaERP</span>
                 </a>
 
                 <!-- Sidebar -->
@@ -104,7 +104,7 @@
                         <img src={{ asset('adminlte/dist/img/user2-160x160.jpg') }} class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -157,7 +157,7 @@
                 <!-- /.control-sidebar -->
 
                 <!-- Main Footer -->
-                <footer class="main-footer">
+                <footer class="main-footer text-xs">
                     <!-- To the right -->
                     <div class="float-right d-none d-sm-inline">
                         ERP Indonesia
